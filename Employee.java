@@ -1,20 +1,21 @@
 package minitest_2;
 
-public abstract class NhanVien {
+public class Employee {
     private String code;
     private String name;
     private int age;
     private String number;
     private String email;
 
-    public NhanVien(String code, String name, int age, int number, String email){}
-
-    public NhanVien(String code, String name, int age, String number, String email) {
+    public Employee(String code, String name, int age, String number, String email) {
         this.code = code;
         this.name = name;
         this.age = age;
         this.number = number;
         this.email = email;
+    }
+
+    public Employee() {
     }
 
     public String getCode() {
@@ -55,6 +56,9 @@ public abstract class NhanVien {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+    public double getSalary(){
+        return 0;
     }
 
 
